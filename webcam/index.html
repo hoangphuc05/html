@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="func.js"></script>
+  </head>
+  <body onload="init();">
+    <h1 id="head">Take a snapshot of the current video stream</h1>
+   Click on the Start WebCam button.
+     <p>
+    <button onclick="startWebcam();">Start WebCam</button>
+    <button onclick="stopWebcam();">Stop WebCam</button> 
+       <button onclick="snapshot();">Take Snapshot</button> 
+    </p>
+    <video onclick="snapshot(this);"  id="video" controls autoplay></video>
+  <p>
+
+        Screenshots : <p>
+      <canvas  id="myCanvas" width="640" height="480"></canvas>  
+  </body>
+  
+</html>

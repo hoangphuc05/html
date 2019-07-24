@@ -30,6 +30,12 @@ if (isset($_POST['action'])) {
         case 'next':
             nextSong($_POST['key']);
             break;
+        case 'prev':
+            previous($_POST['key']);
+            break;
+        case 'current':
+            getCurrent($_POST['key']);
+            break;
     }
 }
 
@@ -65,5 +71,41 @@ function nextSong($access){
     //$response = json_decode($response, true);
     echo $response;
 }
+
+function previous($access){
+    $urlApi = "https://api.spotify.com/v1/me/player/previous";
+    //$urlApi = "https://hookb.in/E7oB3Nl7BphegeaZ9QxJ";
+    $header =  ["Authorization: Bearer ".$access,
+                "Content-length: 0"];
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $urlApi);
+    curl_setopt($ch,CURLOPT_POST, true);
+    curl_setopt($ch,CURLOPT_HTTPHEADER,$header);
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+    curl_close($ch);
+ 
+    echo $response;
+}
+
+function getCurrent($access){
+    $urlApi = "https://api.spotify.com/v1/me/player/currently-playing";
+    //$urlApi = "https://hookb.in/E7oB3Nl7BphegeaZ9QxJ";
+    $header =  ["Authorization: Bearer ".$access,
+                "Content-length: 0"];
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $urlApi);
+    curl_setopt($ch,CURLOPT_GET, true);
+    curl_setopt($ch,CURLOPT_HTTPHEADER,$header);
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+    curl_close($ch);
+    //$response = json_decode($response, true);
+    echo $response;
+}
+
+
 
 ?>

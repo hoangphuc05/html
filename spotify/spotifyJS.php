@@ -7,9 +7,8 @@
     <title>MeoNha's Button</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scode.js"></script>
-    <script src="jshandler.js"></script>
     <script src="phpScript.js"></script>
-    
+    <script src="jshandler.js"></script>
 
 </head>
 <body>
@@ -18,11 +17,10 @@
         <h1 class="display-3">MeoNha's Button</h1>
     </div>
     <div class="container row">
-        <button id="refreshTK" type="button" class="btn btn-primary btnphp" value="prev">Prev Song</button>
-        <button id="refreshTK" type="button" class="btn btn-primary btnphp" value="refresh">Get new token</button>
-        <button id="refreshTK" type="button" class="btn btn-primary btnjs" value="refreshjs">Login</button>
-        <button id="refreshTK" type="button" class="btn btn-primary btnphp" value="current">Get current</button>
-        <button type="button" class="btn btn-primary" value="next">Next song</button>
+        <button type="button" class="btn btn-primary btnjs" value="prevjs">Prev Song</button>
+        <button type="button" class="btn btn-primary btnjs" value="refreshjs">Get login</button>
+        <button type="button" class="btn btn-primary btnjs" value="currentjs">Get current</button>
+        <button type="button" class="btn btn-primary btnjs" value="next">Next song</button>
     </div>
     <div class="container row" id="responses"></div>
     <div class="container row">
