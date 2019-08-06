@@ -9,7 +9,7 @@ function getLoc(){
     curl_setopt($local, CURLOPT_URL, $finalURL);
     //curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
     curl_setopt($local,CURLOPT_RETURNTRANSFER, true);
-    //echo curl_exec($local);
+    echo curl_exec($local);
     //echo $finalURL;
     $result = json_decode(curl_exec($local), true);
     curl_close($local);
@@ -17,7 +17,7 @@ function getLoc(){
         "lat" => $result["lat"],
         "lon" => $result["lon"],
     ];
-    echo json_encode($respone);
+    return json_encode($respone);
 }
 
 if ($_POST["task"] == "getIP"){
@@ -25,11 +25,23 @@ if ($_POST["task"] == "getIP"){
 }
 if ($_POST["task"] == "getLocation"){
     
-    getLoc();
+    echo getLoc();
 }
+
 if ($_POST["task"] == "getWeather"){
     $loc = json_decode(getLoc(), true);
-    
+    echo $loc["lat"]."\n";
+    $appID = "8c63037e7c695e142fcf7638969a6d2e";
+    $url = "api.openweathermap.org/data/2.5/weather";
+    $query = [
+        "lat" => $loc["lat"],
+        "lon" => $lon["lon"],
+        "appid" => $appID
+    ];
+    $finalURL = $url."?".http_build_query($query);
+    echo $finalURL;
+    $respone = file_get_contents($finalURL);
+    echo $respone;
 }
 
 ?>
