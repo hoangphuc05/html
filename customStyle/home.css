@@ -1,0 +1,36 @@
+html,
+body {
+    height: 100%;
+    background: #676D89;
+    background: #20262e;
+    
+
+}
+
+a, a:hover{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+.card {
+    margin: 15px;
+    color: black;
+}
+.mid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > div > div > button{
+    padding: 15px;
+    border: 10px;
+    margin: 15px;
+}
+
+.mid > *{
+    color: whitesmoke;
+    align-content: center;
+    text-align: center;
+    
+}
