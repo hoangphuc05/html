@@ -1,0 +1,13 @@
+#header{
+    padding:0.5rem;
+}
+.logo{
+    font-family: "Bree Serif", serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color:black;
+    
+    align-items: center;
+}
