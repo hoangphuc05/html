@@ -29,17 +29,25 @@ function addMain(mid){
 } 
 
 $(document).ready(function(){
+    $(document).mouseenter(function(){
+        console.log("www");
+    });
     var allCard = $(".card");
+
+    
     for(var i = 0; i < allCard.length ; i++){
+        console.log(allCard[i]);
         allCard.eq(i).attr("onmouseover","mouseOverAni(this);");
     }
 
-    $additionContent = $("#addition")
+    $additionContent = $("#addition");
     $additionContent.remove(); 
+
+
 })
 
 function mouseOverAni(obj){
-    if (obj == obj.parent()){
+    if ($(obj) == $(obj).parent()){
         return;
     }
     obj.classList.add("animated", "bounce");
