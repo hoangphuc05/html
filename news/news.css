@@ -1,6 +1,15 @@
 #header{
     padding:0.5rem;
 }
+body{
+    position: relative;
+    height: 100%;
+}
+.rrspy{
+    position: relative;
+    height:500px;
+    overflow: auto;
+}
 .logo{
     font-family: "Bree Serif", serif;
     font-weight: 300;
@@ -10,4 +19,49 @@
     color:black;
     
     align-items: center;
+}
+.sources_head {
+    text-align: center;
+}
+.sources_head>*{
+    border:black solid;
+    border-radius: 15px;
+    width : 110%;
+}
+.content{
+    margin-left:5px;
+}
+.thumb{
+    object-fit: cover;
+    width:150px;
+    height:150px;
+    border-radius: 15px;
+    position: relative;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.thumbDiv img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mid {
+    text-align:center;
+}
+.mid>*{
+    text-align:left;
+}
+.innerLink {
+    pointer-events: none;
+}
+a, a:hover{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+.card {
+    margin-bottom:10px;
 }

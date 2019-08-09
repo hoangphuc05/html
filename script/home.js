@@ -1,4 +1,5 @@
 
+
 function fadeOut(mid){
     
     console.log(mid);

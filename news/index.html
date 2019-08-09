@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type='text/javascript' src = "newsJS.js"></script>
     <link rel='stylesheet' href='../style/bootstrap.min.css'/>
     <link rel='stylesheet' href='./news.css'>
     <title>News API gather</title>
@@ -17,5 +21,66 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                    <nav id="navbar-all" class="navbar navbar-light bg-light flex-column">
+                        <a class="navbar-brand" href="#">News</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#source-1">Item 1</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+                            </nav>
+                        </nav>
+                    </nav>
+            </div>
+            <div class="col-8">
+                <div data-spy="scroll" data-target="navbar-all" data-offset="0" class ="rspy" id="news_storage">
+                    <div id= "source-1">
+                        <h4 class="sources_head"><span class="sources_span"> GOOGLE NEWS </span></h4>
+                    </div>
+                
+                    <div class="card" id="item-1-1">
+                        <a href="https://www.cbsnews.com/news/veronica-escobar-el-paso-congresswoman-declines-invitation-to-meet-trump/">
+                            <div class="card-body">
+                                <div class="row content">
+                                    <div class="col-9 mid">
+                                        <div class="row"><h4 class="title">Veronica Escobar: El Paso congresswoman declines invitation to meet Trump</h4></div>
+                                        <div class="row"><p class="description">Veronica Escobar's predecessor in the congressional seat, 2020 hopeful Beto O'Rourke, has also publicly asked Mr. Trump not to come</p></div>
+                                        <div class="row innerLink"><p>CBS News<p></div>
+                                    </div>
+                                    <div class="col-3 thumbDiv">
+                                        <img src="https://cbsnews2.cbsistatic.com/hub/i/r/2019/08/07/734b56ee-fdbf-4e37-b928-181fc0655cca/thumbnail/1200x630/76ba8875530a0963118a69d247deb050/ap-19217709578595.jpg" class="img-fluid thumb">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">Weather holder</div>
+        </div>
+
+    </div>
+
 </body>
+<div class="NewsTemplate">
+        <div class="card">
+                <a href="https://www.cbsnews.com/news/veronica-escobar-el-paso-congresswoman-declines-invitation-to-meet-trump/">
+                    <div class="card-body">
+                        <div class="row content">
+                            <div class="col-9 mid">
+                                <div class="row"><h4 class="title">TitleToBeReplace</h4></div>
+                                <div class="row"><p class="description">DescriptionToBeReplace</p></div>
+                                <div class="row source"><p>SourcesToBeReplace<p></div>
+                            </div>
+                            <div class="col-3 thumbDiv">
+                                <img src="" class="img-fluid thumb">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+</div>
 </html>
