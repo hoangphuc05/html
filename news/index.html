@@ -25,7 +25,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2">
-                    <nav id="navbar-all" class="navbar navbar-light bg-light flex-column">
+                    <!--<nav id="navbar-all" class="navbar navbar-light bg-light flex-column">
                         <a class="navbar-brand" href="#">News</a>
                         <nav class="nav nav-pills flex-column">
                             <a class="nav-link" href="#source-1">Item 1</a>
@@ -33,54 +33,53 @@
                                 <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
                             </nav>
                         </nav>
-                    </nav>
+                    </nav>-->
+                    <div class="list-group local-scroll" id = "News_List">
+
+                    </div>
             </div>
             <div class="col-8">
-                <div data-spy="scroll" data-target="navbar-all" data-offset="0" class ="rspy" id="news_storage">
-                    <div id= "source-1">
-                        <h4 class="sources_head"><span class="sources_span"> GOOGLE NEWS </span></h4>
-                    </div>
-                
-                    <div class="card" id="item-1-1">
-                        <a href="https://www.cbsnews.com/news/veronica-escobar-el-paso-congresswoman-declines-invitation-to-meet-trump/">
-                            <div class="card-body">
-                                <div class="row content">
-                                    <div class="col-9 mid">
-                                        <div class="row"><h4 class="title">Veronica Escobar: El Paso congresswoman declines invitation to meet Trump</h4></div>
-                                        <div class="row"><p class="description">Veronica Escobar's predecessor in the congressional seat, 2020 hopeful Beto O'Rourke, has also publicly asked Mr. Trump not to come</p></div>
-                                        <div class="row innerLink"><p>CBS News<p></div>
-                                    </div>
-                                    <div class="col-3 thumbDiv">
-                                        <img src="https://cbsnews2.cbsistatic.com/hub/i/r/2019/08/07/734b56ee-fdbf-4e37-b928-181fc0655cca/thumbnail/1200x630/76ba8875530a0963118a69d247deb050/ap-19217709578595.jpg" class="img-fluid thumb">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div data-spy="scroll" data-target="navbar-all" data-offset="0" class ="rspy local-scroll" id="news_storage">
+                    
                 </div>
             </div>
-            <div class="col-2">Weather holder</div>
+            <div class="col-2 allign-center weatherStorage">
+                
+            </div>
         </div>
 
     </div>
 
 </body>
-<div class="NewsTemplate">
-        <div class="card">
-                <a href="https://www.cbsnews.com/news/veronica-escobar-el-paso-congresswoman-declines-invitation-to-meet-trump/">
-                    <div class="card-body">
-                        <div class="row content">
-                            <div class="col-9 mid">
-                                <div class="row"><h4 class="title">TitleToBeReplace</h4></div>
-                                <div class="row"><p class="description">DescriptionToBeReplace</p></div>
-                                <div class="row source"><p>SourcesToBeReplace<p></div>
-                            </div>
-                            <div class="col-3 thumbDiv">
-                                <img src="" class="img-fluid thumb">
+<div hidden>
+        <div id= "source-1">
+                <h4 class="sources_head"><span class="sources_span"> GOOGLE NEWS </span></h4>
+            </div>
+    <div class="NewsTemplate">
+            <div class="card">
+                    <a href="https://www.cbsnews.com/news/veronica-escobar-el-paso-congresswoman-declines-invitation-to-meet-trump/">
+                        <div class="card-body">
+                            <div class="row content">
+                                <div class="col-9 mid">
+                                    <div class="row"><h4 class="title">TitleToBeReplace</h4></div>
+                                    <div class="row"><p class="description">DescriptionToBeReplace</p></div>
+                                    <div class="row source"><p>SourcesToBeReplace<p></div>
+                                </div>
+                                <div class="col-3 thumbDiv">
+                                    <img src="" class="img-fluid thumb">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+    </div>
+    <a href="#" class="list-group-item list-group-item-action dynamic-news-list" onclick="getNews();"></a>
+    <div id="weather">
+            <h5 id="city">Ho Chi Minh city</h5> 
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="img-thumbnail">
+            <h4 id="temp">31 <sup>o</sup>C</h4>
+            <h6 id = "descr">Partly cloudy</h6>
+    </div>
 </div>
+
 </html>

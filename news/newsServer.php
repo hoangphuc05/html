@@ -58,4 +58,9 @@ if ($_POST["task"] == "getNews"){
     }
 }
 
+if ($_POST["task"] == "getNewsList"){
+    $listURL = "https://newsapi.org/v2/sources?language=en&apiKey=ad839156b20e4117ac95d2307988b619";
+    echo file_get_contents($listURL);
+}
+
 ?>

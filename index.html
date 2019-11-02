@@ -11,51 +11,87 @@
     <script src="./library/anime.min.js"></script>
     <link rel='stylesheet' href="./customStyle/home.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="mid">
-        <div class="inner col-auto" id ="inner">
-            <img src="ezgif-3-fa41e0f1ad0a.gif"/>
-            <h3>Site is currently under construction</h3>
-            <button type="button" class="btn btn-primary" onclick="fadeOut(this.parentNode);">Continue</button>
+    <div class="container-fluid full-height center-allign">
+        <div class="mid">
+        <div>
+            
+            <h2 style="font-size: 3rem;">Phuc Hoang Cai</h2>
+            <p>Whitworth</p>
+            <div class="row">
+                <a class="btn btn-outline-primary" href="#About-me" role="button">About Me</a>
+                <a class="btn btn-outline-primary" href="#" role="button">My Project</a>
+                <a class="btn btn-outline-primary" href="#Contact" role="button">Contact me?</a>
+            </div>
         </div>
+        </div>
+
+    </div>
+    <div class="full-height mid" id="About-me">
+        <div>
+            <p>Full time student at Whitworth University, interest in computer science.</p>
+            <p>Develop, create when interested.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid full-height">
+        <div class="mid">
+            <div class="inner col-auto" id ="inner">
+                <img src="ezgif-3-fa41e0f1ad0a.gif"/>
+                <h3>Site is currently under construction</h3>
+                <button type="button" class="btn btn-primary" onclick="fadeOut(this.parentNode);">Continue</button>
+            </div>
+        </div>
+        
+
+        <div class="animated fadeInUp" id="addition">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <a href="./webcam/">
+                        <div class="card-body">
+                            <h5 class="card-title">Azure Image AI</h5>
+                        <p class="card-text">Illustrate the use of Azure API to recognize the image taken with the computer webcam.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <a href="./spotify/spotifyChange.php">
+                        <div class="card-body">
+                            <h5 class="card-title">Spotify API</h5>
+                        <p class="card-text">Illustrate the use of Spotify API to read the current track, change the track.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/hoangphuc05">
+                        <div class="card-body">
+                            <h5 class="card-title">GitHub</h5>
+                        <p class="card-text">Github profile with all the project that I have done in the past, aka a mess.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="full-height mid" id="Contact">
+    <div>
+        <div>
+            <p>I currently major in Computer Science and Math in a small university in Washington State, have a deep interest in computers, books, </p>
+        </div>
+        <div class="card-footer">
+            This is the footer
+        </div>
+    </div>
     </div>
     
-
-    <div class="animated fadeInUp" id="addition">
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <a href="./webcam/">
-                    <div class="card-body">
-                        <h5 class="card-title">Azure Image AI</h5>
-                    <p class="card-text">Illustrate the use of Azure API to recognize the image taken with the computer webcam.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="card" style="width: 18rem;">
-                <a href="./spotify/spotifyChange.php">
-                    <div class="card-body">
-                        <h5 class="card-title">Spotify API</h5>
-                    <p class="card-text">Illustrate the use of Spotify API to read the current track, change the track.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <a href="https://github.com/hoangphuc05">
-                    <div class="card-body">
-                        <h5 class="card-title">GitHub</h5>
-                    <p class="card-text">Github profile with all the project that I have done in the past, aka a mess.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        
 
 </body>
 

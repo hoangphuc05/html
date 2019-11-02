@@ -1,10 +1,18 @@
 html,
 body {
     height: 100%;
-    background: #676D89;
-    background: #20262e;
-    
+    background-image: url("../img/halong_blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
 
+    font-family: Roboto;    
+    color: whitesmoke; 
+
+}
+html {
+    scroll-behavior: smooth;
 }
 
 a, a:hover{
@@ -33,4 +41,14 @@ body > div > div > button{
     align-content: center;
     text-align: center;
     
+}
+
+.full-height{
+    height:100%;
+}
+.center-allign{
+    text-align: center;
+}
+.btn{
+    margin: auto;
 }

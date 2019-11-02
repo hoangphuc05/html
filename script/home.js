@@ -30,9 +30,7 @@ function addMain(mid){
 } 
 
 $(document).ready(function(){
-    $(document).mouseenter(function(){
-        console.log("www");
-    });
+    
     var allCard = $(".card");
 
     
